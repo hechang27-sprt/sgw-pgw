@@ -1,0 +1,3 @@
+{
+    "rust-analyzer.completion.excludeTraits": ["owo_colors::OwoColorize"]
+}
