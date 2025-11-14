@@ -1,3 +1,6 @@
 {
-    "rust-analyzer.completion.excludeTraits": ["owo_colors::OwoColorize"]
+    "rust-analyzer.completion.excludeTraits": ["owo_colors::OwoColorize"],
+    "containers.environment": {
+        // "DOCKER_CONTEXT": "sprt225"
+    }
 }

@@ -1,7 +1,4 @@
-use std::{
-    borrow::Cow,
-    net::{Ipv4Addr, Ipv6Addr},
-};
+use std::net::{Ipv4Addr, Ipv6Addr};
 
 use bin_proto::{BitDecode, BitEncode, Discriminable};
 
@@ -67,13 +64,4 @@ pub struct Ipv6Header {
     pub hl: u8, // hop limit
     pub src: Ipv6Addr,
     pub dst: Ipv6Addr,
-}
-
-#[derive(Debug, PartialEq, Eq, BitEncode, BitDecode)]
-pub struct GtpuHeader {}
-
-impl GtpuHeader {
-    pub fn wrap(teid: u32, payload: Cow<[u8]>) -> Self {
-        todo!()
-    }
 }

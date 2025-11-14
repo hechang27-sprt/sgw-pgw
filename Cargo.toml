@@ -5,6 +5,11 @@ edition = "2024"
 
 [dependencies]
 bin-proto = "0.11.0"
-tokio = { version = "1.48.0", features = ["net"] }
+dashmap = "6.1.0"
+fastrand = "2.3.0"
+futures = "0.3.31"
+scc2 = "2.4.4"
+sharded-slab = "0.1.7"
+tokio = { version = "1.48.0", features = ["full"] }
 tokio-tun = "0.15.0"
 
